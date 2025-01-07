@@ -3,7 +3,7 @@ arr = [int(x, 16) for x in f]
 divider = int('1E', 16)
 max_sum = 0
 cnt = 0
-for i in range(len(arr) - 1):
+for i in range(len(arr) - 3):
     for j in range(i + 3, len(arr), 3):
         if arr[i] % divider == 0 and arr[j] % divider == 0:
             s = arr[i] + arr[j]
